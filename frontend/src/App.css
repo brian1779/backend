@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #1e1e2e;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.sidebar-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background: #007bff;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px; /* Space for sidebar */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Upload Box */
+.upload-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+/* File Input */
+input[type="file"] {
+  display: block;
+  margin: 10px auto;
+}
+
+/* File Info */
+.file-info {
+  margin-top: 10px;
+  padding: 10px;
+  background: #e0e0e0;
+  border-radius: 5px;
+}
+
+/* Upload Button */
+.upload-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100px;
+  }
+
+  .sidebar ul li a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .main-content {
+    margin-left: 100px;
+  }
+}
+
+/* Download Button */
+.download-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #218838;
+}
